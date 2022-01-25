@@ -21,7 +21,7 @@ tdt_to_xlsx(tdt_file);
 ```
 Calling with return and optional arguments:
 ```MATLAB
-path_to_saved_xlsx = tdt_to_xlsx(tdt_file, "SaveTxt", 1, "WriteMode", "overwritesheet")
+path_to_saved_xlsx = tdt_to_xlsx(tdt_file, "XLSXFileName", coolfilenamehere, "DestinationPath", awesomepathhere, "SaveTxt", 1, "WriteMode", "overwritesheet")
 ```
 # Limitations
 My current method of checking for and replacing "missing" values is a little convoluted and could probably be a lot better. I ran into issues with cellfun and ismissing triggering on any string with spaces. Feel free to make a pull request if you have a better way of handling it.
