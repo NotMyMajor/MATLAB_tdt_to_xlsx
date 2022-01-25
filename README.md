@@ -27,4 +27,5 @@ path_to_saved_xlsx = tdt_to_xlsx(tdt_file, "XLSXFileName", coolfilenamehere, "De
 My current method of checking for and replacing "missing" values is a little convoluted and could probably be a lot better. I ran into issues with cellfun and ismissing triggering on any string with spaces. Feel free to make a pull request if you have a better way of handling it.
 
 Thanks for checking this out!
+
 [![View tdt_to_xlsx on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105760-tdt_to_xlsx)
