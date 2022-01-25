@@ -9,7 +9,7 @@ Optional arguments are specified using the following name-value arguments:
 3. "SaveTXT", some-logical-here - A logical argument indicating whether you want to save the .txt conversion of the .tdt or have it automatically removed once the .xlsx has been written. Defaults to false.
 4. "WriteMode", some-string-here - A string argument that is passed to the writecell function's "WriteMode" argument in MATLAB to change the behavior of how writecell chooses to write or overwrite existing files. Defaults to 'replacefile'.
 
-In cases where SaveTXT is set to false (or defaults), but a .txt already exists at the given save destination, the function will not delete the existing .txt file. This behavior can be changed by disabling lines 19 and 20 in the code.
+In cases where SaveTXT is set to false (or defaults), but a .txt already exists at the given save destination, the function will not delete the existing .txt file. This behavior can be changed by disabling lines 21 and 22 in the code.
 
 # Output
 The function saves a .xlsx file and (optionally) a .txt conversion of the initial .tdt file. It also returns the full path to the saved .xlsx file.
