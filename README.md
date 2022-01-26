@@ -1,6 +1,6 @@
 # MATLAB_tdt_to_xlsx
 
-Reads in a .tdt file, converts it to .txt, reads this in as a cell array, then saves the cell array as a .xlsx file. Includes optional arguments for specifying saved file name, destination path, writecell WriteMode, and whether to save the .txt converion. Returns the full path of the saved .xlsx file.
+Reads in a .tdt file, converts it to .txt, reads this in as a cell array, then saves the cell array as a .xlsx file. Includes optional arguments for specifying saved file name, destination path, writecell WriteMode, and whether to save the .txt conversion. Returns the full path of the saved .xlsx file.
 
 # Arguments
 Optional arguments are specified using the following name-value arguments:
@@ -25,6 +25,8 @@ path_to_saved_xlsx = tdt_to_xlsx(tdt_file, "XLSXFileName", coolfilenamehere, "De
 ```
 # Limitations
 My current method of checking for and replacing "missing" values is a little convoluted and could probably be a lot better. I ran into issues with cellfun and ismissing triggering on any string with spaces. Feel free to make a pull request if you have a better way of handling it.
+
+This function was originally designed for .tdt files outputted by NeuroGuide the EEG analysis software. Theoretically it should work with any non-proprietary tab-deliminated text file. Let me know if it doesn't.
 
 Thanks for checking this out!
 
